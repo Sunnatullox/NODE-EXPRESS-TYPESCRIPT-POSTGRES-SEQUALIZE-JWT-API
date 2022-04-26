@@ -19,7 +19,7 @@ https://sunnatullox-api.herokuapp.com/project
 
 # 7 POST FIRST GET https://sunnatullox-api.herokuapp.com/project/1
 
-Update # 8 PUT https://sunnatullox-api.herokuapp.com/project/100
+# 8 Update  PUT https://sunnatullox-api.herokuapp.com/project/100
 here also titles: (Sunnatullox token), main part: (title, status, url);
 
 # 9 Delete DELETE
