@@ -1,0 +1,39 @@
+{
+  "name": "psql-migration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-modul": "npx sequelize-cli model:generate --name user --attributes email:stringclsn name:string",
+    "migrate": "npx sequelize-cli init",
+    "dev": "nodemon app.ts",
+    "start":"nodemon build/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.25",
+    "@types/uuid": "^8.3.4",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.19.0",
+    "uuid": "^8.3.2"
+  }
+}
