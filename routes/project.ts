@@ -47,9 +47,14 @@ router.get("/project/:id", login, async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
     const project = await db.Project.findOne({ where: { id } });
-    return project > 0
-      ? res.status(200).json(project)
-      : res.status(404).json({ msg: "not found project" });
+
+    if(project){
+      res.status(200).json(project)
+      return
+    }else{
+      res.status(404).json({ msg: "not found project" });
+      return
+    }
   } catch (error) {
     console.log(error);
     res.status(422).json({ error: "Project not found" });
